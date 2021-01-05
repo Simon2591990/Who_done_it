@@ -33,7 +33,7 @@ episode = 2
 
 // error. the changeMurderer function tries to change a const variable.
 
-epsode = 3
+episode = 3
 
 // let murderer = 'Professor Plum';
 
