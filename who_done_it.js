@@ -93,24 +93,115 @@ episode = 5
 
 episode = 6
 
-let murderer = 'Colonel Mustard';
+// let murderer = 'Colonel Mustard';
 
-const changeMurderer = function() {
-  murderer = 'Mr. Green';
+// const changeMurderer = function() {
+//   murderer = 'Mr. Green';
 
-  const plotTwist = function() {
-    murderer = 'Mrs. White';
-  }
+//   const plotTwist = function() {
+//     murderer = 'Mrs. White';
+//   }
 
-  plotTwist();
+//   plotTwist();
+// }
+
+// const declareMurderer = function () {
+//   return `The murderer is ${murderer}.`;
+// }
+
+// changeMurderer();
+// const verdict = declareMurderer();
+// console.log(verdict);
+
+// Mrs. White. the murderer is changed with changeMurder to Mr. Green and then it's changed gain to Mrs. White with the plotTwist function
+
+episode = 7
+
+// let murderer = 'Professor Plum';
+
+// const changeMurderer = function() {
+//   murderer = 'Mr. Green';
+
+//   const plotTwist = function() {
+//     let murderer = 'Colonel Mustard';
+
+//     const unexpectedOutcome = function() {
+//       murderer = 'Miss Scarlet';
+//     }
+
+//     unexpectedOutcome();
+//   }
+
+//   plotTwist();
+// }
+
+// const declareMurderer = function() {
+//   return `The murderer is ${murderer}.`;
+// }
+
+// changeMurderer();
+// const verdict = declareMurderer();
+// console.log(verdict);
+
+// Mr. Green. changeMurderer changes murderer to Mr. Green.
+// plotTwist creates a new variable for murderer but because it uses "let" to define it, it doesnt change the murderer outside of the function. 
+// unexpectedOutcome also doesnt change the murderer outside of the function as it is using the murder  variable from plotTwist
+
+episode = 8
+
+// const scenario = {
+//     murderer: 'Mrs. Peacock',
+//     room: 'Conservatory',
+//     weapon: 'Lead Pipe'
+//   };
+
+// const changeScenario = function() {
+//     scenario.murderer = 'Mrs. Peacock';
+//     scenario.room = 'Dining Room';
+
+//     const plotTwist = function(room) {
+//       if (scenario.room === room) {
+//         scenario.murderer = 'Colonel Mustard';
+//       }
+  
+//       const unexpectedOutcome = function(murderer) {
+//         if (scenario.murderer === murderer) {
+//           scenario.weapon = 'Candle Stick';
+//         }
+//       }
+  
+//       unexpectedOutcome('Colonel Mustard');
+//     }
+  
+//     plotTwist('Dining Room');
+//   }
+  
+// const declareWeapon = function() {
+//     return `The weapon is ${scenario.weapon}.`
+//   }
+
+// changeScenario();
+// const verdict = declareWeapon();
+// console.log(verdict);
+
+// Candle Stick. changeScenario changes the murderer, room and weapon using different functions.
+// changeScenario changes the room to dining room.
+// plotTwist checks is the argument passed into matches the scenario. it passes so the murderer is changed to Mustard
+// unexpectedOutcome checks if the argument passed in matches the scenatio and changes the weapon to Candle Stick
+
+episode = 9
+
+let murderer = 'Professor Plum';
+
+if (murderer === 'Professor Plum') {
+  let murderer = 'Mrs. Peacock';
 }
 
-const declareMurderer = function () {
+const declareMurderer = function() {
   return `The murderer is ${murderer}.`;
 }
 
-changeMurderer();
 const verdict = declareMurderer();
 console.log(verdict);
 
-// Mrs. White
+// Professor Plum. the if statement creates a new variable for murderer but it can onlky be used inside of the if block
